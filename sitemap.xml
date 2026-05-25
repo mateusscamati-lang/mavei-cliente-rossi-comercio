@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!--
-    Sitemap inicial. Será regenerado automaticamente pela MAVEI sempre que
+    Sitemap inicial. SerÃ¡ regenerado automaticamente pela MAVEI sempre que
     um post novo de blog for publicado (via automations/seo/build-sitemap.js).
-    Placeholders [DOMINIO] são substituídos pelo create-client-repo.
+    Placeholders rossicomercio.com.br sÃ£o substituÃ­dos pelo create-client-repo.
   -->
 
   <url>
-    <loc>https://[DOMINIO]/</loc>
+    <loc>https://rossicomercio.com.br/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://[DOMINIO]/sobre.html</loc>
+    <loc>https://rossicomercio.com.br/sobre.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://[DOMINIO]/servicos.html</loc>
+    <loc>https://rossicomercio.com.br/servicos.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://[DOMINIO]/contato.html</loc>
+    <loc>https://rossicomercio.com.br/contato.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://[DOMINIO]/blog/</loc>
+    <loc>https://rossicomercio.com.br/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
