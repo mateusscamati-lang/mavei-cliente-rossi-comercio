@@ -1,55 +1,48 @@
 {
-  "slug": "nome-do-cliente",
-  "nome": "Nome do Cliente",
-  "nome_curto": "Cliente",
-  "segmento": "ex: clínica odontológica, academia, barbearia",
-  "cidade": "São Paulo, SP",
-  "site": "nomeocliente.com.br",
-  "whatsapp": "+55 11 99999-9999",
+  "slug": "rossi-comercio",
+  "nome": "Rossi Comércio",
+  "nome_curto": "Rossi",
+  "segmento": "Comercio de Cereais(batata, alho, cebola e abóbora cambotia)",
+  "cidade": "Campinas - SP",
+  "site": "www.rossicomercio.com.br",
+  "whatsapp": "19) 3746-1240",
   "whatsapp_mensagem": "Olá! Vim pelo site e gostaria de mais informações.",
-  "email": "contato@nomeocliente.com.br",
-  "instagram": "@nomeocliente",
-  "ga4_id": "",
-
-  "cores": {
-    "primaria": "#111111",
-    "secundaria": "#FFFFFF",
-    "destaque": "#F2C94C",
-    "fundo": "#F6F4F1",
-    "fundo2": "#EFEDE8",
-    "texto": "#111111",
-    "texto_suave": "rgba(17,17,17,0.55)"
+  "email": "",
+  "instagram": {
+    "ativo": true,
+    "posts_por_semana": 3,
+    "dias_post": [
+      2,
+      3,
+      4
+    ]
   },
-
+  "ga4_id": "",
+  "cores": {
+    "primaria": "#ffffff",
+    "destaque": "#e60000",
+    "fundo": "#000000"
+  },
   "tipografia": {
     "titulo": "Cormorant Garamond",
     "corpo": "Inter Tight",
-    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter+Tight:wght@300;400;500;600&display=swap"
+    "google_fonts_url": ""
   },
-
   "marca": {
-    "proposta_valor": "O que o cliente entrega em uma frase.",
-    "publico": "Para quem é: perfil do cliente ideal.",
+    "proposta_valor": "Há 45 anos atuando no mercado do Agronegócio, passamos de geração em geração a importância em garantir o padrão dos produtos que levamos até a mesa do consumidor. Trabalhamos com batatas, alhos, abóboras, além de cebolas nacionais e importadas.",
+    "publico": "B2B",
     "diferenciais": [
-      "Diferencial 1",
-      "Diferencial 2",
-      "Diferencial 3"
+      "Atendimento Exclusivo",
+      "Preço Baixo",
+      "Excelente Qualidade"
     ],
-    "tom_de_voz": "ex: direto e acolhedor, técnico e confiável, descontraído e jovem",
-    "palavras_proibidas": ["barato", "promoção"]
+    "tom_de_voz": "Acolhedor"
   },
-
   "blog": {
     "ativo": false,
     "frequencia": "semanal",
-    "topicos_foco": [
-      "ex: saúde bucal, clareamento dental, ortodontia"
-    ]
+    "topicos_foco": []
   },
-
-  "instagram": {
-    "ativo": false,
-    "posts_por_semana": 3,
-    "dias_post": [2, 4, 6]
-  }
+  "briefing": {},
+  "briefing_done": false
 }
