@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contato | [NOME_CLIENTE] em [CIDADE]</title>
+<meta name="description" content="Entre em contato com [NOME_CLIENTE] em [CIDADE]: WhatsApp [TELEFONE], Instagram [INSTAGRAM_HANDLE], horários de atendimento e localização.">
+<meta name="author" content="[NOME_CLIENTE]">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="BR-[UF]">
+<meta name="geo.placename" content="[CIDADE]">
+<link rel="canonical" href="https://[DOMINIO]/contato.html">
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://[DOMINIO]/contato.html">
+<meta property="og:title" content="Contato | [NOME_CLIENTE]">
+<meta property="og:description" content="WhatsApp, Instagram, horários e localização de [NOME_CLIENTE] em [CIDADE].">
+<meta property="og:image" content="https://[DOMINIO]/assets/images/og-image.jpg">
+<meta property="og:locale" content="pt_BR">
+
+<!-- JSON-LD — ContactPage + Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://[DOMINIO]/contato.html#contactpage",
+      "url": "https://[DOMINIO]/contato.html",
+      "name": "Contato [NOME_CLIENTE]",
+      "isPartOf": { "@id": "https://[DOMINIO]/#website" },
+      "about": { "@id": "https://[DOMINIO]/#organization" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://[DOMINIO]/" },
+        { "@type": "ListItem", "position": 2, "name": "Contato", "item": "https://[DOMINIO]/contato.html" }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Fontes self-hosted (latin + latin-ext WOFF2) -->
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="preload" href="/styles.css" as="style">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="/" class="nav__logo" aria-label="[NOME_CLIENTE] — Início">[NOME_CLIENTE]</a>
+  <nav class="nav__links" aria-label="Menu principal">
+    <a href="/sobre.html">Sobre</a>
+    <a href="/servicos.html">Serviços</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contato.html" aria-current="page">Contato</a>
+  </nav>
+  <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" class="nav__cta" target="_blank" rel="noopener">
+    Falar agora
+  </a>
+</header>
+
+<main>
+
+  <section class="page-hero" aria-labelledby="contato-title">
+    <div class="container">
+      <p class="eyebrow">Contato</p>
+      <h1 class="section-title" id="contato-title">
+        Fale com [NOME_CLIENTE]
+      </h1>
+      <p class="section-sub">
+        Estamos em [CIDADE]/[UF]. Atendemos por WhatsApp, Instagram ou presencialmente nos horários abaixo.
+      </p>
+    </div>
+  </section>
+
+  <section class="page-section contato-grid">
+    <div class="container">
+      <div class="contato-cards">
+        <!-- WhatsApp -->
+        <div class="contato-card">
+          <p class="eyebrow">Mais rápido</p>
+          <h2 class="section-title contato-card__title">WhatsApp</h2>
+          <p class="contato-card__info">[TELEFONE]</p>
+          <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" class="btn btn--primary" target="_blank" rel="noopener">
+            Abrir WhatsApp
+          </a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="contato-card">
+          <p class="eyebrow">Conheça mais</p>
+          <h2 class="section-title contato-card__title">Instagram</h2>
+          <p class="contato-card__info">[INSTAGRAM_DISPLAY]</p>
+          <a href="https://instagram.com/[INSTAGRAM_HANDLE]" class="btn btn--ghost" target="_blank" rel="noopener">
+            Ver perfil
+          </a>
+        </div>
+
+        <!-- Endereço -->
+        <div class="contato-card">
+          <p class="eyebrow">Onde estamos</p>
+          <h2 class="section-title contato-card__title">[CIDADE]</h2>
+          <p class="contato-card__info">[ENDERECO]</p>
+          <a href="https://www.google.com/maps/search/[ENDERECO_ENCODED]" class="btn btn--ghost" target="_blank" rel="noopener">
+            Ver no mapa
+          </a>
+        </div>
+
+        <!-- Horários -->
+        <div class="contato-card">
+          <p class="eyebrow">Horários</p>
+          <h2 class="section-title contato-card__title">Atendimento</h2>
+          <div class="contato-card__info">
+            [HORARIOS_HTML]
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa embed -->
+  <section class="page-section">
+    <div class="container">
+      <iframe
+        src="https://www.google.com/maps/embed/v1/place?key=[GOOGLE_MAPS_KEY]&q=[ENDERECO_ENCODED]"
+        width="100%" height="400" style="border:0; border-radius:8px;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Localização de [NOME_CLIENTE]">
+      </iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="eyebrow">[NOME_CLIENTE]</p>
+        <p class="footer-tagline">[SEGMENTO] em [CIDADE].</p>
+      </div>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <a href="/">Início</a>
+        <a href="/sobre.html">Sobre</a>
+        <a href="/servicos.html">Serviços</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contato.html">Contato</a>
+      </nav>
+      <div>
+        <p class="eyebrow">Contato</p>
+        <p class="footer-contact">
+          <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" target="_blank" rel="noopener">WhatsApp [TELEFONE]</a><br>
+          <a href="https://instagram.com/[INSTAGRAM_HANDLE]" target="_blank" rel="noopener">@[INSTAGRAM_HANDLE]</a>
+        </p>
+      </div>
+    </div>
+    <p class="footer-credit">
+      © [ANO] [NOME_CLIENTE] · Site desenvolvido por
+      <a href="https://www.mavei.com.br" target="_blank" rel="noopener" class="mavei-credit" aria-label="MAVEI Digital — desenvolvimento de sites">
+        <picture>
+          <source srcset="/assets/mavei-logo.webp" type="image/webp">
+          <img src="/assets/mavei-logo.png" alt="MAVEI Digital" class="mavei-credit__logo" width="200" height="52" loading="lazy">
+        </picture>
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
