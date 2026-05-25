@@ -1,0 +1,46 @@
+name: Weekly Blog Post
+
+# Workflow gerenciado pela MAVEI Digital.
+# Não editar manualmente — qualquer mudança deve ser feita via plataforma MAVEI.
+
+on:
+  schedule:
+    # Toda segunda-feira às 9h UTC. Ajuste o horário se necessário.
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Gerar post via MAVEI
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # BLOG_CLIENT_SLUG deve corresponder ao arquivo em automations/blog/clients/ da plataforma MAVEI
+          BLOG_CLIENT_SLUG: ${{ vars.BLOG_CLIENT_SLUG }}
+          MAVEI_PLATFORM_REPO: ${{ secrets.MAVEI_PLATFORM_REPO }}
+        run: |
+          # Clona a plataforma MAVEI (privada) e roda o gerador apontando para este repo
+          git clone --depth=1 https://x-access-token:${MAVEI_PLATFORM_REPO}@github.com/mateusscamati/mavei-automations.git /tmp/mavei
+          cd /tmp/mavei && npm ci
+          BLOG_OUTPUT_DIR=$GITHUB_WORKSPACE node automations/blog/generate-post.js
+
+      - name: Commit e push
+        run: |
+          git config user.name "MAVEI Bot"
+          git config user.email "bot@mavei.digital"
+          git add blog/
+          git diff --staged --quiet && echo "Sem alterações" && exit 0
+          git commit -m "blog: post semanal $(date +'%Y-%m-%d')"
+          git push
