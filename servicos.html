@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Serviços | [NOME_CLIENTE] em [CIDADE]</title>
+<meta name="description" content="Conheça os serviços de [NOME_CLIENTE]: [DESCRIPTION_SERVICOS]">
+<meta name="author" content="[NOME_CLIENTE]">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="BR-[UF]">
+<meta name="geo.placename" content="[CIDADE]">
+<link rel="canonical" href="https://[DOMINIO]/servicos.html">
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://[DOMINIO]/servicos.html">
+<meta property="og:title" content="Serviços | [NOME_CLIENTE]">
+<meta property="og:description" content="[DESCRIPTION_SERVICOS]">
+<meta property="og:image" content="https://[DOMINIO]/assets/images/og-image.jpg">
+<meta property="og:locale" content="pt_BR">
+
+<!-- JSON-LD — CollectionPage + Service catalog + Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://[DOMINIO]/servicos.html#collectionpage",
+      "url": "https://[DOMINIO]/servicos.html",
+      "name": "Serviços de [NOME_CLIENTE]",
+      "description": "[DESCRIPTION_SERVICOS]",
+      "isPartOf": { "@id": "https://[DOMINIO]/#website" },
+      "about": { "@id": "https://[DOMINIO]/#organization" },
+      "mainEntity": {
+        "@type": "OfferCatalog",
+        "name": "Serviços oferecidos por [NOME_CLIENTE]",
+        "itemListElement": [
+          [SERVICOS_SCHEMA_LIST]
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://[DOMINIO]/" },
+        { "@type": "ListItem", "position": 2, "name": "Serviços", "item": "https://[DOMINIO]/servicos.html" }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Fontes self-hosted (latin + latin-ext WOFF2) -->
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="preload" href="/styles.css" as="style">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="/" class="nav__logo" aria-label="[NOME_CLIENTE] — Início">[NOME_CLIENTE]</a>
+  <nav class="nav__links" aria-label="Menu principal">
+    <a href="/sobre.html">Sobre</a>
+    <a href="/servicos.html" aria-current="page">Serviços</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contato.html">Contato</a>
+  </nav>
+  <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" class="nav__cta" target="_blank" rel="noopener">
+    Falar agora
+  </a>
+</header>
+
+<main>
+
+  <section class="page-hero" aria-labelledby="servicos-title">
+    <div class="container">
+      <p class="eyebrow">O que fazemos</p>
+      <h1 class="section-title" id="servicos-title">
+        Serviços de [NOME_CLIENTE]
+      </h1>
+      <p class="section-sub">
+        [DESCRIPTION_SERVICOS]
+      </p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="servicos-list">
+        [SERVICOS_HTML_LIST]
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section-title">Quer começar?</h2>
+      <p class="section-sub">Conte pra gente o que você precisa. Atendimento rápido pelo WhatsApp.</p>
+      <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="eyebrow">[NOME_CLIENTE]</p>
+        <p class="footer-tagline">[SEGMENTO] em [CIDADE].</p>
+      </div>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <a href="/">Início</a>
+        <a href="/sobre.html">Sobre</a>
+        <a href="/servicos.html">Serviços</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contato.html">Contato</a>
+      </nav>
+      <div>
+        <p class="eyebrow">Contato</p>
+        <p class="footer-contact">
+          <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" target="_blank" rel="noopener">WhatsApp [TELEFONE]</a><br>
+          <a href="https://instagram.com/[INSTAGRAM_HANDLE]" target="_blank" rel="noopener">@[INSTAGRAM_HANDLE]</a>
+        </p>
+      </div>
+    </div>
+    <p class="footer-credit">
+      © [ANO] [NOME_CLIENTE] · Site desenvolvido por
+      <a href="https://www.mavei.com.br" target="_blank" rel="noopener" class="mavei-credit" aria-label="MAVEI Digital — desenvolvimento de sites">
+        <picture>
+          <source srcset="/assets/mavei-logo.webp" type="image/webp">
+          <img src="/assets/mavei-logo.png" alt="MAVEI Digital" class="mavei-credit__logo" width="200" height="52" loading="lazy">
+        </picture>
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
