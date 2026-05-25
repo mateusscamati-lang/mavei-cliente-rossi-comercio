@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     /sobre — populado pelo create-client-repo com briefing do cliente.
+     Placeholders abaixo viram texto real automaticamente.
+     ============================================================ -->
+
+<title>Sobre [NOME_CLIENTE] | [SEGMENTO] em [CIDADE]</title>
+<meta name="description" content="Conheça a história de [NOME_CLIENTE]: [DESCRIPTION_SOBRE]">
+<meta name="author" content="[NOME_CLIENTE]">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="BR-[UF]">
+<meta name="geo.placename" content="[CIDADE]">
+<link rel="canonical" href="https://[DOMINIO]/sobre.html">
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://[DOMINIO]/sobre.html">
+<meta property="og:title" content="Sobre [NOME_CLIENTE] | [SEGMENTO] em [CIDADE]">
+<meta property="og:description" content="[DESCRIPTION_SOBRE]">
+<meta property="og:image" content="https://[DOMINIO]/assets/images/og-image.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="[NOME_CLIENTE]">
+
+<!-- JSON-LD — AboutPage + Person (fundador) + Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://[DOMINIO]/sobre.html#aboutpage",
+      "url": "https://[DOMINIO]/sobre.html",
+      "name": "Sobre [NOME_CLIENTE]",
+      "description": "[DESCRIPTION_SOBRE]",
+      "isPartOf": { "@id": "https://[DOMINIO]/#website" },
+      "about": { "@id": "https://[DOMINIO]/#organization" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://[DOMINIO]/" },
+        { "@type": "ListItem", "position": 2, "name": "Sobre", "item": "https://[DOMINIO]/sobre.html" }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Fontes self-hosted (latin + latin-ext WOFF2) -->
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="preload" href="/styles.css" as="style">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="/" class="nav__logo" aria-label="[NOME_CLIENTE] — Início">[NOME_CLIENTE]</a>
+  <nav class="nav__links" aria-label="Menu principal">
+    <a href="/sobre.html" aria-current="page">Sobre</a>
+    <a href="/servicos.html">Serviços</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contato.html">Contato</a>
+  </nav>
+  <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" class="nav__cta" target="_blank" rel="noopener">
+    Falar agora
+  </a>
+</header>
+
+<main>
+
+  <!-- Hero da página /sobre -->
+  <section class="page-hero" aria-labelledby="sobre-title">
+    <div class="container">
+      <p class="eyebrow">Quem somos</p>
+      <h1 class="section-title" id="sobre-title">
+        Sobre [NOME_CLIENTE]
+      </h1>
+      <p class="section-sub">
+        [DESCRIPTION_SOBRE]
+      </p>
+    </div>
+  </section>
+
+  <!-- História -->
+  <section class="page-section" aria-labelledby="historia-title">
+    <div class="container">
+      <p class="eyebrow">Nossa história</p>
+      <h2 class="section-title" id="historia-title">Atendendo [CIDADE] [HA_QUANTO_TEMPO]</h2>
+      <div class="prose">
+        <p>[HISTORIA_PARAGRAFO_1]</p>
+        <p>[HISTORIA_PARAGRAFO_2]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="page-section page-section--alt" aria-labelledby="diferenciais-title">
+    <div class="container">
+      <p class="eyebrow">Por que escolher [NOME_CLIENTE]</p>
+      <h2 class="section-title" id="diferenciais-title">O que nos diferencia</h2>
+      <ul class="diferenciais-list">
+        [DIFERENCIAIS_LIST_HTML]
+      </ul>
+    </div>
+  </section>
+
+  <!-- Público / Para quem -->
+  <section class="page-section" aria-labelledby="publico-title">
+    <div class="container">
+      <p class="eyebrow">Pra quem</p>
+      <h2 class="section-title" id="publico-title">Pra quem trabalhamos</h2>
+      <p class="prose">[PUBLICO_TEXTO]</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section-title">Vamos conversar?</h2>
+      <p class="section-sub">Se você gostou de saber mais sobre [NOME_CLIENTE], dá um oi pelo WhatsApp.</p>
+      <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="eyebrow">[NOME_CLIENTE]</p>
+        <p class="footer-tagline">[SEGMENTO] em [CIDADE].</p>
+      </div>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <a href="/">Início</a>
+        <a href="/sobre.html">Sobre</a>
+        <a href="/servicos.html">Serviços</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contato.html">Contato</a>
+      </nav>
+      <div>
+        <p class="eyebrow">Contato</p>
+        <p class="footer-contact">
+          <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" target="_blank" rel="noopener">WhatsApp [TELEFONE]</a><br>
+          <a href="https://instagram.com/[INSTAGRAM_HANDLE]" target="_blank" rel="noopener">@[INSTAGRAM_HANDLE]</a>
+        </p>
+      </div>
+    </div>
+    <p class="footer-credit">
+      © [ANO] [NOME_CLIENTE] · Site desenvolvido por
+      <a href="https://www.mavei.com.br" target="_blank" rel="noopener" class="mavei-credit" aria-label="MAVEI Digital — desenvolvimento de sites">
+        <picture>
+          <source srcset="/assets/mavei-logo.webp" type="image/webp">
+          <img src="/assets/mavei-logo.png" alt="MAVEI Digital" class="mavei-credit__logo" width="200" height="52" loading="lazy">
+        </picture>
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
