@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://[DOMINIO]/sitemap.xml
+Sitemap: https://rossicomercio.com.br/sitemap.xml
 
 # Paths privados
 Disallow: /admin/
