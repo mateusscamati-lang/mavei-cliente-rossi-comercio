@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     PADRÃO SEO MAVEI — herdado por todo cliente novo.
+     Placeholders [XXX] são substituídos pelo create-client-repo
+     com base nos dados do briefing/brand.json do cliente.
+     ============================================================ -->
+
+<title>[TITULO_PAGINA_HOME]</title>
+<meta name="description" content="[DESCRIPTION_HOME]">
+<meta name="keywords" content="[KEYWORDS]">
+<meta name="author" content="[NOME_CLIENTE]">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="BR-[UF]">
+<meta name="geo.placename" content="[CIDADE]">
+<link rel="canonical" href="https://[DOMINIO]/">
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<link rel="shortcut icon" href="/assets/images/favicon.svg">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://[DOMINIO]/">
+<meta property="og:title" content="[TITULO_PAGINA_HOME]">
+<meta property="og:description" content="[DESCRIPTION_HOME]">
+<meta property="og:image" content="https://[DOMINIO]/assets/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="[NOME_CLIENTE]">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="[TITULO_PAGINA_HOME]">
+<meta name="twitter:description" content="[DESCRIPTION_HOME]">
+<meta name="twitter:image" content="https://[DOMINIO]/assets/images/og-image.jpg">
+
+<!-- ============================================================
+     JSON-LD — Schema.org rico (padrão MAVEI)
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://[DOMINIO]/#organization",
+      "name": "[NOME_CLIENTE]",
+      "url": "https://[DOMINIO]",
+      "logo": "https://[DOMINIO]/assets/images/logo.png",
+      "description": "[DESCRIPTION_HOME]",
+      "knowsAbout": ["[SEGMENTO]"],
+      "areaServed": { "@type": "Country", "name": "Brasil" },
+      "sameAs": [
+        "https://instagram.com/[INSTAGRAM_HANDLE]"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "[TELEFONE]",
+        "contactType": "customer support",
+        "areaServed": "BR",
+        "availableLanguage": ["Portuguese"]
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://[DOMINIO]/#business",
+      "name": "[NOME_CLIENTE]",
+      "description": "[DESCRIPTION_HOME]",
+      "url": "https://[DOMINIO]",
+      "telephone": "[TELEFONE]",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "[CIDADE]",
+        "addressRegion": "[UF]",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://instagram.com/[INSTAGRAM_HANDLE]"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "[CIDADE]" },
+        { "@type": "Country", "name": "Brasil" }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://[DOMINIO]/#website",
+      "url": "https://[DOMINIO]",
+      "name": "[NOME_CLIENTE]",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://[DOMINIO]/#organization" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://[DOMINIO]/" }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Fontes self-hosted (latin + latin-ext WOFF2).
+     GA4 fica em /main.js com lazy load (não bloqueia paint). -->
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="preload" href="/styles.css" as="style">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────────────────────────────────── -->
+<header class="nav" id="nav">
+  <a href="/" class="nav__logo" aria-label="[NOME DO CLIENTE] — página inicial">
+    <!-- Logo SVG inline ou <img> -->
+    <span class="nav__logo-text">[NOME]</span>
+  </a>
+  <nav class="nav__links" aria-label="Menu principal">
+    <a href="/sobre.html">Sobre</a>
+    <a href="/servicos.html">Serviços</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contato.html">Contato</a>
+  </nav>
+  <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" class="nav__cta" target="_blank" rel="noopener">
+    Falar agora
+  </a>
+</header>
+
+<!-- ── HERO ─────────────────────────────────────────────────────────────── -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__content">
+    <p class="hero__eyebrow">[CIDADE] · [SEGMENTO]</p>
+    <h1 class="hero__title" id="hero-title">
+      [HEADLINE PRINCIPAL — promessa central do negócio]
+    </h1>
+    <p class="hero__sub">
+      [Subcopy: 1-2 frases apoiando a headline. Quem atende, o que entrega, por que agora.]
+    </p>
+    <div class="hero__actions">
+      <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" class="btn btn--primary" target="_blank" rel="noopener">
+        [CTA PRINCIPAL]
+      </a>
+      <a href="/servicos.html" class="btn btn--ghost">Ver serviços</a>
+    </div>
+  </div>
+  <div class="hero__visual" aria-hidden="true">
+    <!-- Imagem hero ou elemento visual -->
+  </div>
+</section>
+
+<!-- ── SERVIÇOS ──────────────────────────────────────────────────────────── -->
+<section class="services" id="servicos" aria-labelledby="services-title">
+  <div class="container">
+    <h2 class="section-title" id="services-title">[TÍTULO DA SEÇÃO]</h2>
+    <p class="section-sub">[Subtítulo opcional]</p>
+    <div class="services__grid">
+
+      <article class="service-card">
+        <div class="service-card__icon" aria-hidden="true"><!-- ícone --></div>
+        <h3>[Nome do Serviço]</h3>
+        <p>[Descrição: o que inclui, resultado, para quem.]</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon" aria-hidden="true"><!-- ícone --></div>
+        <h3>[Nome do Serviço]</h3>
+        <p>[Descrição]</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon" aria-hidden="true"><!-- ícone --></div>
+        <h3>[Nome do Serviço]</h3>
+        <p>[Descrição]</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── SOBRE ─────────────────────────────────────────────────────────────── -->
+<section class="about" id="sobre" aria-labelledby="about-title">
+  <div class="container about__grid">
+    <div class="about__visual">
+      <!-- Foto do espaço, do profissional ou elemento visual -->
+      <img src="/assets/images/sobre.jpg" alt="[Descrição da imagem]" width="600" height="700" loading="lazy">
+    </div>
+    <div class="about__content">
+      <p class="eyebrow">[TAG DA SEÇÃO]</p>
+      <h2 id="about-title">[TÍTULO DA SEÇÃO SOBRE]</h2>
+      <p>[Parágrafo 1: história, origem, motivação]</p>
+      <p>[Parágrafo 2: missão, valores, como trabalha]</p>
+      <ul class="about__list">
+        <li>[Diferencial ou credencial]</li>
+        <li>[Diferencial ou credencial]</li>
+        <li>[Diferencial ou credencial]</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── DEPOIMENTOS ───────────────────────────────────────────────────────── -->
+<section class="reviews" aria-labelledby="reviews-title">
+  <div class="container">
+    <h2 class="section-title" id="reviews-title">[TÍTULO DOS DEPOIMENTOS]</h2>
+    <div class="reviews__grid">
+
+      <blockquote class="review-card">
+        <p>"[Depoimento real do cliente.]"</p>
+        <footer>
+          <strong>[Nome do Cliente]</strong>
+          <span>[Cidade ou contexto]</span>
+        </footer>
+      </blockquote>
+
+      <blockquote class="review-card">
+        <p>"[Depoimento real do cliente.]"</p>
+        <footer>
+          <strong>[Nome do Cliente]</strong>
+          <span>[Cidade ou contexto]</span>
+        </footer>
+      </blockquote>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA FINAL ─────────────────────────────────────────────────────────── -->
+<section class="cta-final" id="contato" aria-labelledby="cta-title">
+  <div class="container">
+    <h2 class="cta-final__title" id="cta-title">[HEADLINE DO CTA FINAL]</h2>
+    <p class="cta-final__sub">[Subcopy: remove objeção, reforça urgência ou facilidade]</p>
+    <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+      [CTA BOTÃO]
+    </a>
+    <p class="cta-final__hint">[Detalhe de suporte: "Respondemos em até 1h" ou "Sem compromisso"]</p>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="eyebrow">[NOME_CLIENTE]</p>
+        <p class="footer-tagline">[SEGMENTO] em [CIDADE].</p>
+      </div>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <a href="/">Início</a>
+        <a href="/sobre.html">Sobre</a>
+        <a href="/servicos.html">Serviços</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contato.html">Contato</a>
+      </nav>
+      <div>
+        <p class="eyebrow">Contato</p>
+        <p class="footer-contact">
+          <a href="https://wa.me/[WHATSAPP]?text=[MENSAGEM_ENCODED]" target="_blank" rel="noopener">WhatsApp [TELEFONE]</a><br>
+          <a href="https://instagram.com/[INSTAGRAM_HANDLE]" target="_blank" rel="noopener">@[INSTAGRAM_HANDLE]</a>
+        </p>
+      </div>
+    </div>
+    <p class="footer-credit">
+      © [ANO] [NOME_CLIENTE] · Site desenvolvido por
+      <a href="https://www.mavei.com.br" target="_blank" rel="noopener" class="mavei-credit" aria-label="MAVEI Digital — desenvolvimento de sites">
+        <picture>
+          <source srcset="/assets/mavei-logo.webp" type="image/webp">
+          <img src="/assets/mavei-logo.png" alt="MAVEI Digital" class="mavei-credit__logo" width="200" height="52" loading="lazy">
+        </picture>
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
