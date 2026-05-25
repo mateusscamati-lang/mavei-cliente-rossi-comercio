@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!--
+    Sitemap inicial. Será regenerado automaticamente pela MAVEI sempre que
+    um post novo de blog for publicado (via automations/seo/build-sitemap.js).
+    Placeholders [DOMINIO] são substituídos pelo create-client-repo.
+  -->
+
+  <url>
+    <loc>https://[DOMINIO]/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://[DOMINIO]/sobre.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://[DOMINIO]/servicos.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://[DOMINIO]/contato.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://[DOMINIO]/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+</urlset>
