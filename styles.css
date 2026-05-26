@@ -1590,6 +1590,7 @@ body { padding-top: 0; }
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
+.clientes__grid--3 { grid-template-columns: repeat(3, 1fr); }
 .cliente-card {
   background: var(--off-white);
   border-radius: var(--radius);
