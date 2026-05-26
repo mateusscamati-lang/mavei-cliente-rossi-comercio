@@ -4,13 +4,15 @@
    Tipografia: Outfit (400/600/700) — mesma do logo.
    ============================================================ */
 
-/* ── Page transitions (fade-in puro CSS, sem dependência de JS) ── */
+/* ── Page transitions: fade-in só na primeira <section>
+       (NUNCA no body, senão quebra position:fixed do nav no iOS Safari) ── */
 @keyframes page-fade-in {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
-body {
-  animation: page-fade-in .45s cubic-bezier(.2,.7,.2,1) both;
+main > section:first-child,
+body > section:first-of-type {
+  animation: page-fade-in .45s ease both;
 }
 
 /* ── Scroll reveal ─────────────────────────────────────────── */
@@ -38,7 +40,7 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   [data-reveal], [data-reveal].is-revealed,
-  body,
+  main > section:first-child, body > section:first-of-type,
   .split-word { opacity: 1 !important; transform: none !important; transition: none !important; animation: none !important; }
 }
 
