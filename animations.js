@@ -10,25 +10,7 @@
 (function () {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // ── 1. Page transition (fade out ao navegar) ──────────────
-  if (!reduceMotion) {
-    document.documentElement.classList.add('page-enter');
-    window.addEventListener('load', () => {
-      requestAnimationFrame(() => document.documentElement.classList.add('page-loaded'));
-    });
-    document.addEventListener('click', (e) => {
-      const a = e.target.closest('a');
-      if (!a) return;
-      const href = a.getAttribute('href');
-      if (!href) return;
-      if (a.target === '_blank') return;
-      if (href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('http')) return;
-      if (a.hasAttribute('download')) return;
-      e.preventDefault();
-      document.documentElement.classList.add('page-leaving');
-      setTimeout(() => { window.location.href = href; }, 260);
-    });
-  }
+  // ── 1. Page transition agora é 100% CSS (animation puro). ──
 
   // ── 2. Scroll-reveal ──────────────────────────────────────
   const revealEls = document.querySelectorAll('[data-reveal]');
@@ -112,28 +94,26 @@
   const burger = document.querySelector('.nav__burger');
   const overlay = document.getElementById('nav-overlay');
   if (burger && overlay) {
-    // Inicia fechado: inert remove do tab order + aria-hidden pra leitor de tela
-    overlay.inert = true;
+    const supportsInert = 'inert' in HTMLElement.prototype;
+    if (supportsInert) overlay.inert = true;
 
     const open = () => {
       overlay.classList.add('is-open');
       overlay.removeAttribute('aria-hidden');
-      overlay.inert = false;
+      if (supportsInert) overlay.inert = false;
       burger.setAttribute('aria-expanded', 'true');
       burger.setAttribute('aria-label', 'Fechar menu');
       document.body.classList.add('nav-open');
-      // Move foco pro primeiro link do overlay
       const firstLink = overlay.querySelector('a');
       if (firstLink) setTimeout(() => firstLink.focus(), 350);
     };
     const close = () => {
       overlay.classList.remove('is-open');
       overlay.setAttribute('aria-hidden', 'true');
-      overlay.inert = true;
+      if (supportsInert) overlay.inert = true;
       burger.setAttribute('aria-expanded', 'false');
       burger.setAttribute('aria-label', 'Abrir menu');
       document.body.classList.remove('nav-open');
-      // Devolve foco pro burger
       burger.focus();
     };
     burger.addEventListener('click', () => {
