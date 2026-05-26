@@ -1152,28 +1152,38 @@ body { padding-top: 0; }
 .hero-edit--bg {
   isolation: isolate;
 }
+/* ::before recebe a foto (sobrescreve o "1975" decorativo da regra base) */
 .hero-edit--bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: auto !important;
+  height: auto !important;
   background-image: var(--hero-bg, none);
-  background-position: center;
-  background-size: cover;
-  opacity: .25;
-  z-index: -2;
-  font-size: 0;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  opacity: .25 !important;
+  z-index: -2 !important;
+  font-size: 0 !important;
+  color: transparent !important;
 }
+/* ::after = overlay escuro por cima da foto */
 .hero-edit--bg::after {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: linear-gradient(180deg, rgba(10,10,10,.5) 0%, rgba(10,10,10,.82) 80%, rgba(10,10,10,.98) 100%);
   z-index: -1;
+  pointer-events: none;
 }
 /* Mobile: troca pra variante 640w via --hero-bg-mobile */
 @media (max-width: 760px) {
   .hero-edit--bg::before {
-    background-image: var(--hero-bg-mobile, var(--hero-bg, none));
+    background-image: var(--hero-bg-mobile, var(--hero-bg, none)) !important;
   }
 }
 
