@@ -1,0 +1,26 @@
+{
+  "name": "Rossi Comércio",
+  "short_name": "Rossi",
+  "description": "Atacado de hortifruti no CEASA Campinas desde 1975.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#0A0A0A",
+  "lang": "pt-BR",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/logo-h.png",
+      "sizes": "400x176",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

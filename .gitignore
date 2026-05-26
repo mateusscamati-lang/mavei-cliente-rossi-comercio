@@ -1,0 +1,23 @@
+# Configs locais do Claude Code
+.claude/
+
+# Scripts e auxiliares de build local (não precisam ir pro deploy)
+assets/images/produtos/_process-receitas.py
+assets/images/brand/_process-heros.py
+assets/images/brand/LEIA-ME.txt
+produtos/_LEIA-ME.md
+
+# Mídia bruta não usada
+assets/images/brand/*.mp4
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node (caso futuramente entre)
+node_modules/
+
+# Logs
+*.log

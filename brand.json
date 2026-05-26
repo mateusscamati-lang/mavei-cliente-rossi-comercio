@@ -2,47 +2,65 @@
   "slug": "rossi-comercio",
   "nome": "Rossi Comércio",
   "nome_curto": "Rossi",
-  "segmento": "Comercio de Cereais(batata, alho, cebola e abóbora cambotia)",
+  "segmento": "Comércio atacadista de batata, cebola, alho e abóbora cabotiá",
+  "_changelog": "2026-05-25: removida cebola importada do mix por decisão do cliente",
   "cidade": "Campinas - SP",
   "site": "www.rossicomercio.com.br",
-  "whatsapp": "19) 3746-1240",
-  "whatsapp_mensagem": "Olá! Vim pelo site e gostaria de mais informações.",
+  "whatsapp": "(19) 97146-9845",
+  "whatsapp_mensagem": "Olá! Vim pelo site da Rossi Comércio e gostaria de mais informações.",
+  "horario_atendimento": {
+    "segunda_quarta_sexta": "04:30 - 13:00",
+    "terca_quinta_sabado": "05:30 - 13:00",
+    "domingo": "fechado"
+  },
   "email": "",
   "instagram": {
     "ativo": true,
+    "handle": "rossicomercio",
+    "url": "https://www.instagram.com/rossicomercio/",
     "posts_por_semana": 3,
-    "dias_post": [
-      2,
-      3,
-      4
-    ]
+    "dias_post": [2, 3, 4]
   },
   "ga4_id": "",
   "cores": {
-    "primaria": "#ffffff",
-    "destaque": "#e60000",
-    "fundo": "#000000"
+    "primaria": "#0A0A0A",
+    "secundaria": "#FFFFFF",
+    "destaque": "#C7342E",
+    "fundo": "#FFFFFF",
+    "fundo_alt": "#F7F5F2"
   },
   "tipografia": {
-    "titulo": "Cormorant Garamond",
-    "corpo": "Inter Tight",
-    "google_fonts_url": ""
+    "titulo": "Outfit",
+    "corpo": "Outfit",
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"
   },
   "marca": {
-    "proposta_valor": "Há 45 anos atuando no mercado do Agronegócio, passamos de geração em geração a importância em garantir o padrão dos produtos que levamos até a mesa do consumidor. Trabalhamos com batatas, alhos, abóboras, além de cebolas nacionais e importadas.",
-    "publico": "B2B",
+    "proposta_valor": "Há 50 anos abastecendo Campinas com batata, cebola, alho e abóbora cabotiá. Tradição de três gerações garantindo o padrão dos produtos que chegam à mesa do consumidor.",
+    "publico": "B2B (restaurantes, mercados, revendas) e B2C (consumidor final no CEASA)",
     "diferenciais": [
-      "Atendimento Exclusivo",
-      "Preço Baixo",
-      "Excelente Qualidade"
+      "50 anos de tradição no CEASA Campinas",
+      "Atendimento exclusivo para cada cliente",
+      "Padrão de qualidade garantido geração após geração"
     ],
-    "tom_de_voz": "Acolhedor"
+    "tom_de_voz": "Acolhedor, educacional, com autoridade do tempo"
   },
   "blog": {
     "ativo": false,
     "frequencia": "semanal",
-    "topicos_foco": []
+    "topicos_foco": [
+      "Como escolher e armazenar batata, cebola, alho e abóbora",
+      "Receitas com produtos protagonistas",
+      "Bastidores da operação no CEASA",
+      "Datas comemorativas com gancho do produto"
+    ]
   },
-  "briefing": {},
+  "briefing": {
+    "ano_fundacao": 1975,
+    "gerações": 3,
+    "produtos": ["batata", "cebola", "alho", "abóbora cabotiá"],
+    "local_operacao": "CEASA Campinas",
+    "publico_b2b": ["restaurantes", "mercados", "revendas", "distribuidores"],
+    "publico_b2c": "consumidor final que compra direto no CEASA"
+  },
   "briefing_done": false
 }

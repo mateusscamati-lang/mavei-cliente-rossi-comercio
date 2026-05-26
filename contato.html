@@ -4,23 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contato | Rossi Comércio em Campinas - SP</title>
-<meta name="description" content="Entre em contato com Rossi Comércio em Campinas - SP: WhatsApp 19) 3746-1240, Instagram https://www.instagram.com/rossicomercio/, horÃ¡rios de atendimento e localizaÃ§Ã£o.">
+<title>Contato | Rossi Comércio — CEASA Campinas, WhatsApp (19) 97146-9845</title>
+<meta name="description" content="Fale com a Rossi Comércio: WhatsApp (19) 97146-9845, Instagram @rossicomercio e ponto fixo no CEASA Campinas, de segunda a sábado.">
 <meta name="author" content="Rossi Comércio">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="geo.region" content="BR-SP">
-<meta name="geo.placename" content="Campinas - SP">
+<meta name="geo.placename" content="Campinas">
 <link rel="canonical" href="https://rossicomercio.com.br/contato.html">
+<link rel="alternate" hreflang="pt-BR" href="https://rossicomercio.com.br/contato.html">
+<link rel="alternate" hreflang="x-default" href="https://rossicomercio.com.br/contato.html">
+<link rel="preconnect" href="https://www.google.com" crossorigin>
+<link rel="preconnect" href="https://maps.googleapis.com" crossorigin>
+<link rel="dns-prefetch" href="https://wa.me">
 <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0A0A0A">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rossicomercio.com.br/contato.html">
 <meta property="og:title" content="Contato | Rossi Comércio">
-<meta property="og:description" content="WhatsApp, Instagram, horÃ¡rios e localizaÃ§Ã£o de Rossi Comércio em Campinas - SP.">
+<meta property="og:description" content="WhatsApp, Instagram e ponto fixo no CEASA Campinas. Segunda a sábado, abertos de madrugada.">
 <meta property="og:image" content="https://rossicomercio.com.br/assets/images/og-image.jpg">
+<meta property="og:image:alt" content="Rossi Comércio — atacado de hortifruti no CEASA Campinas">
 <meta property="og:locale" content="pt_BR">
 
-<!-- JSON-LD â ContactPage + Breadcrumb -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,7 +43,7 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "InÃ­cio", "item": "https://rossicomercio.com.br/" },
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://rossicomercio.com.br/" },
         { "@type": "ListItem", "position": 2, "name": "Contato", "item": "https://rossicomercio.com.br/contato.html" }
       ]
     }
@@ -44,127 +51,202 @@
 }
 </script>
 
-<!-- Fontes self-hosted (latin + latin-ext WOFF2) -->
-<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="preload" href="/fonts/fonts.css" as="style">
+<link rel="preload" as="image" href="/assets/images/logo-h.webp" fetchpriority="high">
+<link rel="stylesheet" href="/fonts/fonts.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/fonts/fonts.css"></noscript>
 <link rel="preload" href="/styles.css" as="style">
 <link rel="stylesheet" href="/styles.css">
+
+<style>
+  /* Mapa GRANDE dentro da página */
+  .contato-map-big {
+    padding: 0 var(--gutter) clamp(80px, 12vh, 130px);
+    background: var(--branco);
+  }
+  .contato-map-big__inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    border: 3px solid var(--preto);
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 16 / 8;
+    background: var(--off-white);
+    box-shadow: 0 12px 40px rgba(0,0,0,.12);
+  }
+  .contato-map-big__inner iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    filter: grayscale(.3) contrast(1.05);
+    transition: filter .3s ease;
+  }
+  .contato-map-big__inner:hover iframe { filter: grayscale(0) contrast(1); }
+  @media (max-width: 720px) {
+    .contato-map-big__inner { aspect-ratio: 4 / 5; }
+  }
+</style>
 </head>
 <body>
 
 <header class="nav" id="nav">
-  <a href="/" class="nav__logo" aria-label="Rossi Comércio â InÃ­cio">Rossi Comércio</a>
+  <button class="nav__burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-overlay">
+    <span></span><span></span><span></span>
+  </button>
+  <a href="/" class="nav__logo" aria-label="Rossi Comércio — Início">
+    <picture><source srcset="/assets/images/logo-h.webp" type="image/webp"><img src="/assets/images/logo-h.png" alt="Rossi Comércio — desde 1975" width="180" height="64"></picture>
+  </a>
   <nav class="nav__links" aria-label="Menu principal">
     <a href="/sobre.html">Sobre</a>
-    <a href="/servicos.html">ServiÃ§os</a>
+    <a href="/produtos/">Produtos</a>
     <a href="/blog/">Blog</a>
     <a href="/contato.html" aria-current="page">Contato</a>
   </nav>
-  <a href="https://wa.me/1937461240?text=Ol%C3%A1!%20Vim%20pelo%20site%20do(a)%20Rossi%20Com%C3%A9rcio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="nav__cta" target="_blank" rel="noopener">
+  <a href="https://wa.me/5519971469845?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Rossi%20Com%C3%A9rcio." class="nav__cta" target="_blank" rel="noopener" data-magnetic>
+    <svg class="btn-wpp-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
     Falar agora
   </a>
 </header>
+<div class="nav-overlay" id="nav-overlay" aria-hidden="true" inert>
+  <div class="nav-overlay__inner">
+    <nav class="nav-overlay__links" aria-label="Menu mobile">
+    <a href="/sobre.html">Sobre</a>
+    <a href="/produtos/">Produtos</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contato.html" aria-current="page">Contato</a>
+  </nav>
+    <div class="nav-overlay__contact">
+      <a href="https://wa.me/5519971469845?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Rossi%20Com%C3%A9rcio." target="_blank" rel="noopener" class="nav-overlay__wpp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+        (19) 97146-9845
+      </a>
+      <a href="https://www.instagram.com/rossicomercio/" target="_blank" rel="noopener" class="nav-overlay__ig">@rossicomercio</a>
+    </div>
+  </div>
+</div>
 
-<main>
 
-  <section class="page-hero" aria-labelledby="contato-title">
-    <div class="container">
-      <p class="eyebrow">Contato</p>
-      <h1 class="section-title" id="contato-title">
-        Fale com Rossi Comércio
+<!-- HERO -->
+<section class="hero-edit hero-edit--bg hero-edit--aerea" aria-labelledby="contato-title" style="min-height:60vh;">
+  <div class="hero-edit__grid" style="grid-template-columns:1fr;">
+    <div class="hero-edit__copy" style="max-width:880px;">
+      <p class="hero-edit__eyebrow" data-reveal>Contato · CEASA Campinas</p>
+      <h1 class="hero-edit__title" id="contato-title" data-reveal>
+        Vamos <em>conversar</em>?
       </h1>
-      <p class="section-sub">
-        Estamos em Campinas - SP/SP. Atendemos por WhatsApp, Instagram ou presencialmente nos horÃ¡rios abaixo.
+      <p class="visually-hidden">Contato Rossi Comércio · CEASA Campinas · WhatsApp (19) 97146-9845</p>
+      <p class="hero-edit__sub" data-reveal data-reveal-delay="200">
+        WhatsApp é o caminho mais rápido. Estamos no CEASA Campinas de segunda a sábado, abertos de madrugada, prontos pra cotar pedido e organizar entrega.
       </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="page-section contato-grid">
-    <div class="container">
-      <div class="contato-cards">
-        <!-- WhatsApp -->
-        <div class="contato-card">
-          <p class="eyebrow">Mais rÃ¡pido</p>
-          <h2 class="section-title contato-card__title">WhatsApp</h2>
-          <p class="contato-card__info">19) 3746-1240</p>
-          <a href="https://wa.me/1937461240?text=Ol%C3%A1!%20Vim%20pelo%20site%20do(a)%20Rossi%20Com%C3%A9rcio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn btn--primary" target="_blank" rel="noopener">
-            Abrir WhatsApp
-          </a>
-        </div>
+<!-- CARDS DE CONTATO -->
+<section class="clientes" aria-labelledby="canais-title" style="padding-top:clamp(60px, 9vh, 100px);">
+  <div class="clientes__head">
+    <div>
+      <p class="eyebrow" data-reveal>Canais de atendimento</p>
+      <h2 class="section-title" id="canais-title" data-reveal>
+        Por <em style="color:var(--vermelho); font-style:italic; font-weight:400;">onde nos achar</em>.
+      </h2>
+    </div>
+    <p class="clientes__head-lede" data-reveal data-reveal-delay="150">
+      Atendemos diferentes tipos de cliente por diferentes canais. Escolha o que faz mais sentido pro seu pedido.
+    </p>
+  </div>
 
-        <!-- Instagram -->
-        <div class="contato-card">
-          <p class="eyebrow">ConheÃ§a mais</p>
-          <h2 class="section-title contato-card__title">Instagram</h2>
-          <p class="contato-card__info">@https://www.instagram.com/rossicomercio/</p>
-          <a href="https://instagram.com/https://www.instagram.com/rossicomercio/" class="btn btn--ghost" target="_blank" rel="noopener">
-            Ver perfil
-          </a>
-        </div>
-
-        <!-- EndereÃ§o -->
-        <div class="contato-card">
-          <p class="eyebrow">Onde estamos</p>
-          <h2 class="section-title contato-card__title">Campinas - SP</h2>
-          <p class="contato-card__info">Campinas - SP</p>
-          <a href="https://www.google.com/maps/search/Campinas%20-%20SP%2C%20Campinas%20-%20SP%2FSP" class="btn btn--ghost" target="_blank" rel="noopener">
-            Ver no mapa
-          </a>
-        </div>
-
-        <!-- HorÃ¡rios -->
-        <div class="contato-card">
-          <p class="eyebrow">HorÃ¡rios</p>
-          <h2 class="section-title contato-card__title">Atendimento</h2>
-          <div class="contato-card__info">
-            
-        <p>Segunda a Sexta: 9h às 18h</p>
-        <p>Sábado: fechado</p>
-        <p>Domingo: fechado</p>
-          </div>
-        </div>
+  <div class="clientes__grid">
+    <article class="cliente-card" data-reveal>
+      <div class="cliente-card__icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
       </div>
-    </div>
-  </section>
+      <h3>WhatsApp</h3>
+      <p style="margin-bottom:18px;">Cotação rápida, pedido por mensagem. Resposta em horário comercial.<br><strong>(19) 97146-9845</strong></p>
+      <a href="https://wa.me/5519971469845?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Rossi%20Com%C3%A9rcio." class="btn btn--primary" target="_blank" rel="noopener">Abrir conversa</a>
+    </article>
 
-  <!-- Mapa embed -->
-  <section class="page-section">
-    <div class="container">
-      <iframe
-        src="https://www.google.com/maps/embed/v1/place?key=&q=Campinas%20-%20SP%2C%20Campinas%20-%20SP%2FSP"
-        width="100%" height="400" style="border:0; border-radius:8px;"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="LocalizaÃ§Ã£o de Rossi Comércio">
-      </iframe>
-    </div>
-  </section>
+    <article class="cliente-card" data-reveal data-reveal-delay="100">
+      <div class="cliente-card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </div>
+      <h3>Instagram</h3>
+      <p style="margin-bottom:18px;">Bastidores da operação, produtos, rotina no CEASA.<br><strong>@rossicomercio</strong></p>
+      <a href="https://www.instagram.com/rossicomercio/" class="btn btn--ghost" target="_blank" rel="noopener">Ver perfil</a>
+    </article>
 
-</main>
+    <article class="cliente-card" data-reveal data-reveal-delay="200">
+      <div class="cliente-card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <h3>no nosso ponto</h3>
+      <p style="margin-bottom:18px;">Nosso ponto fixo desde 1975. Atendemos presencialmente.<br><strong>Campinas — SP</strong></p>
+      <a href="https://www.google.com/maps/search/CEASA+Campinas" class="btn btn--ghost" target="_blank" rel="noopener">Como chegar</a>
+    </article>
+
+    <article class="cliente-card" data-reveal data-reveal-delay="300">
+      <div class="cliente-card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <h3>Horário</h3>
+      <p>Seg, qua e sex: 4h30 às 13h<br>Ter, qui e sáb: 5h30 às 13h<br>Domingo: fechado</p>
+    </article>
+  </div>
+</section>
+
+<!-- MAPA GRANDE -->
+<section class="contato-map-big" aria-label="Localização no CEASA">
+  <div class="contato-map-big__inner" data-reveal="zoom">
+    <iframe src="https://www.google.com/maps?q=CEASA+Campinas&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CEASA Campinas no Google Maps"></iframe>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-hero" aria-labelledby="cta-contato-title">
+  <div class="cta-hero__inner">
+    <h2 class="cta-hero__title" id="cta-contato-title" data-reveal>
+      O jeito mais rápido?<br>
+      <em>WhatsApp</em>.
+    </h2>
+    <p class="cta-hero__sub" data-reveal data-reveal-delay="200">
+      Manda o que você precisa, a gente cota e organiza a entrega. Sem formulário, sem fricção.
+    </p>
+    <a href="https://wa.me/5519971469845?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Rossi%20Com%C3%A9rcio." class="btn btn--primary btn--lg" target="_blank" rel="noopener" data-magnetic data-reveal data-reveal-delay="350">
+      <svg class="btn-wpp-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+      Abrir WhatsApp
+    </a>
+    <p class="cta-hero__hint" data-reveal data-reveal-delay="500">Atendimento de segunda a sábado · madrugada às 13h</p>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div>
-        <p class="eyebrow">Rossi Comércio</p>
-        <p class="footer-tagline">Comercio de Cereais(batata, alho, cebola e abóbora cambotia) em Campinas - SP.</p>
+        <div class="footer__logo"><picture><source srcset="/assets/images/logo.webp" type="image/webp"><img src="/assets/images/logo.png" alt="Rossi Comércio" width="120" height="40"></picture></div>
+        <p class="footer-tagline">Batata, cebola, alho e abóbora cabotiá em Campinas. Tradição de 50 anos.</p>
       </div>
-      <nav class="footer-nav" aria-label="RodapÃ©">
-        <a href="/">InÃ­cio</a>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <p class="eyebrow">Navegação</p>
+        <a href="/">Início</a>
         <a href="/sobre.html">Sobre</a>
-        <a href="/servicos.html">ServiÃ§os</a>
+        <a href="/produtos/">Produtos</a>
         <a href="/blog/">Blog</a>
         <a href="/contato.html">Contato</a>
       </nav>
       <div>
         <p class="eyebrow">Contato</p>
         <p class="footer-contact">
-          <a href="https://wa.me/1937461240?text=Ol%C3%A1!%20Vim%20pelo%20site%20do(a)%20Rossi%20Com%C3%A9rcio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">WhatsApp 19) 3746-1240</a><br>
-          <a href="https://instagram.com/https://www.instagram.com/rossicomercio/" target="_blank" rel="noopener">@https://www.instagram.com/rossicomercio/</a>
+          <a href="https://wa.me/5519971469845" target="_blank" rel="noopener">WhatsApp (19) 97146-9845</a>
+          <a href="https://www.instagram.com/rossicomercio/" target="_blank" rel="noopener">Instagram @rossicomercio</a>
+          <a href="https://www.google.com/maps/search/CEASA+Campinas" target="_blank" rel="noopener">no nosso ponto — SP</a>
         </p>
       </div>
     </div>
     <p class="footer-credit">
-      Â© 2026 Rossi Comércio Â· Site desenvolvido por
-      <a href="https://www.mavei.com.br" target="_blank" rel="noopener" class="mavei-credit" aria-label="MAVEI Digital â desenvolvimento de sites">
+      © <span data-year>2026</span> Rossi Comércio · Site desenvolvido por
+      <a href="https://www.mavei.com.br" target="_blank" rel="noopener" class="mavei-credit">
         <picture>
           <source srcset="/assets/mavei-logo.webp" type="image/webp">
           <img src="/assets/mavei-logo.png" alt="MAVEI Digital" class="mavei-credit__logo" width="200" height="52" loading="lazy">
@@ -175,5 +257,9 @@
 </footer>
 
 <script src="/main.js" defer></script>
+<script src="/animations.js" defer></script>
+<a class="fab-wpp" id="fab-wpp" href="https://wa.me/5519971469845?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Rossi%20Com%C3%A9rcio." target="_blank" rel="noopener" aria-label="Falar com a Rossi Comércio pelo WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zm-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884zm8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 </body>
 </html>

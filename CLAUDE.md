@@ -7,7 +7,7 @@
 - **Segmento:** Comercio de Cereais(batata, alho, cebola e abóbora cambotia)
 - **Cidade:** Campinas - SP
 - **Site:** www.rossicomercio.com.br
-- **WhatsApp:** 19) 3746-1240
+- **WhatsApp:** (19) 97146-9845
 - **Instagram:** https://www.instagram.com/rossicomercio/
 
 ## Proposta de valor

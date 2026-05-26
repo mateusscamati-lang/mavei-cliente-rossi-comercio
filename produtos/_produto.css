@@ -1,0 +1,559 @@
+/* ============================================================
+   Estilos compartilhados das paginas individuais de produto
+   batata / cebola / alho / abobora-cabotia
+   ============================================================ */
+
+.produto-hero {
+  position: relative;
+  padding: clamp(140px, 18vh, 200px) var(--gutter) clamp(60px, 9vh, 100px);
+  background: var(--preto);
+  color: var(--branco);
+  overflow: hidden;
+  isolation: isolate;
+}
+.produto-hero__grid {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: clamp(40px, 6vw, 90px);
+  align-items: center;
+}
+.produto-hero__crumb {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.5);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.produto-hero__crumb a { color: rgba(255,255,255,.5); transition: color .2s; }
+.produto-hero__crumb a:hover { color: var(--branco); }
+.produto-hero__crumb span { color: var(--vermelho); }
+.produto-hero__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--vermelho);
+  color: var(--branco);
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.produto-hero__title {
+  font-family: var(--sans);
+  font-size: clamp(56px, 9vw, 128px);
+  font-weight: 700;
+  line-height: .92;
+  letter-spacing: -.035em;
+  margin-bottom: 26px;
+  color: var(--branco);
+}
+.produto-hero__sub {
+  font-size: clamp(17px, 1.4vw, 20px);
+  color: rgba(255,255,255,.75);
+  line-height: 1.55;
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+.produto-hero__visual {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #1a1a1a;
+  box-shadow: 0 30px 80px rgba(0,0,0,.5);
+}
+.produto-hero__visual picture { display: block; width: 100%; height: 100%; }
+.produto-hero__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ficha tecnica */
+.produto-ficha {
+  padding: clamp(80px, 12vh, 130px) var(--gutter);
+  background: var(--branco);
+}
+.produto-ficha__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.produto-ficha__head {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  margin-bottom: clamp(40px, 6vh, 60px);
+  align-items: end;
+}
+.produto-ficha__head .section-title { margin-bottom: 0; }
+.produto-ficha__head-lede {
+  font-size: 17px;
+  color: var(--texto-suave);
+  line-height: 1.65;
+  padding-bottom: 6px;
+}
+.produto-ficha__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+.ficha-item {
+  background: var(--off-white);
+  padding: 32px 28px;
+  border-radius: var(--radius);
+  border: 1.5px solid transparent;
+  transition: border-color .2s, transform .15s ease;
+}
+.ficha-item:hover { border-color: var(--vermelho); transform: translateY(-2px); }
+.ficha-item__label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--vermelho);
+  margin-bottom: 12px;
+}
+.ficha-item__value {
+  font-family: var(--sans);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+.ficha-item__desc {
+  font-size: 14px;
+  color: var(--texto-suave);
+  line-height: 1.55;
+}
+
+/* Calendario de safra */
+.safra {
+  padding: clamp(80px, 12vh, 130px) var(--gutter);
+  background: var(--off-white);
+}
+.safra__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.safra__head { max-width: 720px; margin-bottom: 48px; }
+.safra__calendar {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 6px;
+  background: var(--branco);
+  padding: 24px;
+  border: 2px solid var(--preto);
+  border-radius: var(--radius);
+}
+.safra__month {
+  text-align: center;
+  padding: 18px 4px;
+  border-radius: 6px;
+  background: var(--off-white);
+  position: relative;
+}
+.safra__month--high { background: var(--vermelho); color: var(--branco); }
+.safra__month--mid { background: rgba(199,52,46,.25); color: var(--preto); }
+.safra__month-name {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  display: block;
+}
+.safra__month-label {
+  font-size: 9px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: .8;
+  margin-top: 4px;
+  display: block;
+}
+.safra__legend {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--texto-suave);
+  flex-wrap: wrap;
+}
+.safra__legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.safra__legend-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+}
+
+/* Receita */
+.receita {
+  padding: clamp(80px, 12vh, 130px) var(--gutter);
+  background: var(--branco);
+}
+.receita__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(40px, 6vw, 90px);
+  align-items: center;
+}
+.receita__visual {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--off-white);
+}
+.receita__visual picture { display: block; width: 100%; height: 100%; }
+.receita__visual img { width: 100%; height: 100%; object-fit: cover; }
+.receita__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--off-white);
+  color: var(--vermelho);
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.receita__title {
+  font-family: var(--sans);
+  font-size: clamp(28px, 3.6vw, 44px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  margin-bottom: 18px;
+}
+.receita__title em { color: var(--vermelho); font-style: italic; font-weight: 400; }
+.receita__meta {
+  display: flex;
+  gap: 28px;
+  margin: 24px 0 28px;
+  padding: 18px 0;
+  border-top: 1px solid var(--borda);
+  border-bottom: 1px solid var(--borda);
+  flex-wrap: wrap;
+}
+.receita__meta-item {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--texto-mais-suave);
+}
+.receita__meta-item strong {
+  display: block;
+  color: var(--texto);
+  font-size: 18px;
+  margin-bottom: 2px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+.receita__ingredientes,
+.receita__modo {
+  margin-top: 18px;
+}
+.receita__list {
+  margin-top: 12px;
+  list-style: none;
+}
+.receita__list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--borda);
+  font-size: 15px;
+  color: var(--texto);
+  display: flex;
+  gap: 14px;
+  line-height: 1.5;
+}
+.receita__list li:last-child { border: none; }
+.receita__list--num { counter-reset: step; }
+.receita__list--num li::before {
+  counter-increment: step;
+  content: counter(step, decimal-leading-zero);
+  color: var(--vermelho);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .12em;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+.receita__sub {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--vermelho);
+  margin-bottom: 4px;
+}
+
+/* Variações do produto */
+.variations {
+  padding: clamp(80px, 12vh, 130px) var(--gutter);
+  background: var(--branco);
+}
+.variations__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.variations__head {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  margin-bottom: clamp(40px, 6vh, 60px);
+  align-items: end;
+}
+.variations__head .section-title { margin-bottom: 0; }
+.variations__head-lede {
+  font-size: 17px;
+  color: var(--texto-suave);
+  line-height: 1.65;
+  padding-bottom: 6px;
+}
+.variations__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+.variation {
+  background: var(--off-white);
+  padding: 32px 28px;
+  border-radius: var(--radius);
+  border: 1.5px solid transparent;
+  transition: border-color .25s ease, transform .15s ease, background .25s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.variation:hover {
+  border-color: var(--vermelho);
+  transform: translateY(-3px);
+  background: var(--branco);
+  box-shadow: 0 12px 32px rgba(199,52,46,.08);
+}
+.variation__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--branco);
+  color: var(--vermelho-tx);
+  font-family: var(--sans);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 100px;
+  border: 1px solid var(--borda);
+  align-self: flex-start;
+  white-space: nowrap;
+}
+.variation:hover .variation__badge {
+  background: var(--vermelho);
+  color: var(--branco);
+  border-color: var(--vermelho);
+}
+.variation__name {
+  font-family: var(--sans);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.2;
+  color: var(--texto);
+  margin: 4px 0 2px;
+}
+.variation__desc {
+  font-size: 14.5px;
+  color: var(--texto-suave);
+  line-height: 1.6;
+  flex: 1;
+}
+.variation__use {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--texto);
+  padding-top: 14px;
+  border-top: 1px solid var(--borda);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.variation__use strong {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--vermelho-tx);
+  display: block;
+  margin-bottom: 4px;
+}
+.variation__use div { line-height: 1.4; }
+
+@media (max-width: 760px) {
+  .variations__head { grid-template-columns: 1fr; gap: 16px; }
+  .variations { padding: clamp(56px, 9vh, 90px) var(--gutter); }
+  .variation { padding: 24px 22px; }
+  .variation__name { font-size: 19px; }
+}
+
+/* Curiosidade */
+.curiosidade {
+  padding: clamp(80px, 12vh, 130px) var(--gutter);
+  background: var(--preto);
+  color: var(--branco);
+  position: relative;
+  overflow: hidden;
+}
+.curiosidade::before {
+  content: "?";
+  position: absolute;
+  top: 50%;
+  right: -3%;
+  font-size: clamp(280px, 38vw, 540px);
+  font-weight: 700;
+  line-height: .9;
+  color: rgba(199,52,46,.06);
+  letter-spacing: -.05em;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.curiosidade__inner {
+  max-width: 920px;
+  margin: 0 auto;
+  position: relative;
+}
+.curiosidade__label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--vermelho);
+  margin-bottom: 26px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.curiosidade__label::before {
+  content: "";
+  width: 32px;
+  height: 2px;
+  background: var(--vermelho);
+}
+.curiosidade__text {
+  font-family: var(--sans);
+  font-size: clamp(24px, 2.8vw, 38px);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -.015em;
+  color: var(--branco);
+  margin-bottom: 24px;
+}
+.curiosidade__text em { color: var(--vermelho-on-preto); font-style: italic; }
+
+/* Bridge pro blog */
+.blog-bridge {
+  padding: clamp(80px, 12vh, 130px) var(--gutter);
+  background: var(--off-white);
+}
+.blog-bridge__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 56px;
+  align-items: center;
+}
+.blog-bridge h2 em { color: var(--vermelho); font-style: italic; font-weight: 400; }
+.blog-bridge p {
+  font-size: 16px;
+  color: var(--texto-suave);
+  line-height: 1.65;
+}
+.blog-bridge__list {
+  display: grid;
+  gap: 14px;
+}
+.blog-bridge__list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 24px;
+  background: var(--branco);
+  border-radius: var(--radius);
+  border: 1.5px solid transparent;
+  transition: border-color .2s, transform .15s ease, background .2s;
+}
+.blog-bridge__list a:hover {
+  border-color: var(--vermelho);
+  transform: translateX(4px);
+}
+.blog-bridge__list a > div { flex: 1; }
+.blog-bridge__list a small {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--vermelho);
+  margin-bottom: 4px;
+}
+.blog-bridge__list a strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--texto);
+  line-height: 1.3;
+}
+.blog-bridge__list a::after {
+  content: "→";
+  color: var(--vermelho);
+  font-weight: 700;
+  font-size: 22px;
+  margin-left: 16px;
+}
+
+/* Outros produtos */
+.outros-produtos {
+  padding: clamp(80px, 12vh, 130px) 0 0;
+  background: var(--branco);
+}
+.outros-produtos__head {
+  max-width: var(--max-w);
+  margin: 0 auto clamp(40px, 6vh, 60px);
+  padding: 0 var(--gutter);
+}
+.outros-produtos__head h2 em { color: var(--vermelho); font-style: italic; font-weight: 400; }
+.outros-produtos__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.outros-produtos__grid .product-edit-card { aspect-ratio: 1 / 1; }
+
+@media (max-width: 860px) {
+  .produto-hero__grid { grid-template-columns: 1fr; }
+  .produto-ficha__head { grid-template-columns: 1fr; gap: 16px; }
+  .receita__inner { grid-template-columns: 1fr; }
+  .blog-bridge__inner { grid-template-columns: 1fr; }
+  .safra__calendar { grid-template-columns: repeat(6, 1fr); }
+  .outros-produtos__grid { grid-template-columns: 1fr; }
+}

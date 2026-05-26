@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!--
-    Sitemap inicial. SerÃ¡ regenerado automaticamente pela MAVEI sempre que
-    um post novo de blog for publicado (via automations/seo/build-sitemap.js).
-    Placeholders rossicomercio.com.br sÃ£o substituÃ­dos pelo create-client-repo.
+    Sitemap Rossi Comércio. Páginas estáticas + páginas individuais de produto.
+    O blog regenera essa sitemap automaticamente via automations MAVEI quando
+    novos posts forem publicados.
   -->
 
   <url>
@@ -20,9 +20,33 @@
   </url>
 
   <url>
-    <loc>https://rossicomercio.com.br/servicos.html</loc>
+    <loc>https://rossicomercio.com.br/produtos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://rossicomercio.com.br/produtos/batata.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://rossicomercio.com.br/produtos/cebola.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://rossicomercio.com.br/produtos/alho.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://rossicomercio.com.br/produtos/abobora-cabotia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <url>

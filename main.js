@@ -88,3 +88,8 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }, { passive: true });
   });
 })();
+
+// ── 5. Ano dinâmico no copyright ─────────────────────
+document.querySelectorAll('[data-year]').forEach(el => {
+  el.textContent = new Date().getFullYear();
+});
